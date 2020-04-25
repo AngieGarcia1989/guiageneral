@@ -16,6 +16,10 @@
 + __pwd__ nos indica donde estamos es ruta absoluta
 + __mkdir__ crea carpeta 
 + __cd__ permite abrir carpeta y ubicarnos 
++ __- cd /__ Permite ir a la ruta principal
++ __cd ~__ ir a la ruta de tu usuario
++ __cd carpeta/subcarpeta__ Navegar a una ruta dentro de la carpeta donde estamos ahora mismo.
++ __cd .. (cd + dos puntos)__ Regresar una carpeta hacia atrás.
 + __..__ devuelve a carpeta padre 
 + __.__ nos permite saber donde estamos 
 + __cd ~/__ para ir a home
@@ -31,6 +35,7 @@ __History__ muestra el historico de comandos que se han hecho con un numero que 
 + __rm dir__ elimina directorio
 + __rm nombre de archivo__ elimina el archivo
 + __rm-rf nombre de la carpeta__ eliminar folder
+__clear:__ Para limpiar la terminal. También podemos usar los atajos de teclado Ctrl + L o Command + L.
 
 ## **_Comandos de archivo_**
 
@@ -38,6 +43,11 @@ __History__ muestra el historico de comandos que se han hecho con un numero que 
 + __more nombre de archivo__ muestra una parte del archivo, podemos navegar con las flechas, salimos con _"q"_
 + __tail nombre de archivo__ muestra 10 lineas del archivo
 + __cat nombre de archivo > nombre de copia de archivo__, genera copia para mac open, abre archivo con programa que trae por defecto
+
+__Todos estos comandos tiene una función de autocompletado, o sea, puedes escribir la primera parte y presionar la tecla Tab para que la terminal nos muestre todas las posibles carpetas o comandos que podemos ejecutar. Si presionas la tecla Arriba puedes ver el último comando que ejecutamos.__
+
+__Recuerda que podemos descubrir todos los argumentos de un comando con el argumento --help (por ejemplo, cat --help).__  
+_tomado de john freddy vega_
 
 ## **_llaves ssh_**
 
