@@ -200,3 +200,30 @@ Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del 
 
 Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged, solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.
 
+## _Uso de GitHub_
+
+GitHub es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de la consola de comandos).
+
+Luego de crear nuestra cuenta, podemos crear o importar repositorios, crear organizaciones y proyectos de trabajo, descubrir repositorios de otras personas, contribuir a esos proyectos, dar estrellas y muchas otras cosas.
+
+El README.md es el archivo que veremos por defecto al entrar a un repositorio. Es una muy buena práctica configurarlo para describir el proyecto, los requerimientos y las instrucciones que debemos seguir para contribuir correctamente.
+
+Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debemos copiar la URL (por ahora, usando HTTPS) y ejecutar el comando git clone + la URL que acabamos de copiar. Esto descargara la versión de nuestro proyecto que se encuentra en GitHub.
+
+Sin embargo, esto solo funciona para las personas que quieren empezar a contribuir en el proyecto. Si queremos conectar el repositorio de GitHub con nuestro repositorio local, el que creamos con git init, debemos ejecutar las siguientes instrucciones:
+
+~~~
+git remote add origin URL
+git remote
+git remote -v
+git pull origin master 
+git push origin master
+~~~
+
+Debemos asegurarnos que estamos en el lugar correcto, es decir en la carpeta correcta con _pwd_
+
++ __git remote:__  nos relaciona con la URL  de github 
++ __git remote:__ nos muestra un origin que fue creado
++ __git remote -v:__ nos muestra la opcion de traer información y de enviar información
++ __git pull origin master:__ trae la información de github
++ __git push origin master:__ permite enviar la información a github
