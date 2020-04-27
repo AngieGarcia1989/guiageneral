@@ -225,5 +225,19 @@ Debemos asegurarnos que estamos en el lugar correcto, es decir en la carpeta cor
 + __git remote:__  nos relaciona con la URL  de github 
 + __git remote:__ nos muestra un origin que fue creado
 + __git remote -v:__ nos muestra la opcion de traer información y de enviar información
-+ __git pull origin master:__ trae la información de github
++ __git pull origin master:__ trae la información de github "--allow-unrelated-histories" se usa para traer por primera vez tus archivos  e integrar de github a visual.
 + __git push origin master:__ permite enviar la información a github
+
+## _Tags y versiones en Git y GitHub_
+
+Los tags o etiquetas nos permiten asignar versiones a los commits con cambios más importantes o significativos de nuestro proyecto.
+
+Comandos para trabajar con etiquetas:
+
++ Crear un nuevo tag y asignarlo a un commit: _git tag -a nombre-del-tag id-del-commit._
++ Borrar un tag en el repositorio local: _git tag -d nombre-del-tag._
++ Listar los tags de nuestro repositorio local: _git tag o git show-ref --tags._
++ Publicar un tag en el repositorio remoto: _git push origin --tags._
++ Borrar un tag del repositorio remoto: _git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag._
+
+[volver al indice](./README.md)

@@ -55,8 +55,27 @@ Son formas seguras para conectarnos con servidores,la llave publica se puede com
 
 las creamos en el home de la terminal con _ssh-keygen -t rsa -b 4096 -C "this is a key"_
 guardamos _.ssh/id_rsa_  damos enter
- te pide un password o passphrase confirmandolo despues  
+ te pide un password o passphrase confirmandolo despues 
 
+ Para comprobar que tu llave este creada en windows o linux debes escibir  _$ eval $(ssh-agent -s)_ esto te debe mostrar una informacion como _agent pid 4724_ o algo similar a este codigo donde se confirma que ya tienes tus llaves tanto como publica y privada.
+
+ cd ~/.ssh/ muestra las llaves, __nunca debes mostrar tu llave privada__
+ 
+ ls -al te muestra de manera mas especifica donde estan ubicadas las llaves 
+
+ con _~/.ssh/id_rsa_ escogemos esta llave para agregarla a nuestro sistema no la publica, por que la publica es la que ligas con el github en este caso.
+
+ Para agregar el correo en windows o linux el correo debo ejecutar el comando _git config --global user.email "email@gmail.com"_ , la llave es unica en cada computador por el nombre.
+
+ Luego de crear nuestras llaves SSH podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.
+
+Para esto debes entrar a la Configuración de Llaves SSH en GitHub, crear una nueva llave con el nombre que le quieras dar y el contenido de la llave pública de tu computadora.
+
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que, en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
+
+~~~
+git remote set-url origin url-ssh-del-repositorio-en-github
+~~~
 
 ## **_Configuracion de la terminal para crear nuestro shell_**
 
