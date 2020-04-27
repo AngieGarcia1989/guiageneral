@@ -232,12 +232,37 @@ Debemos asegurarnos que estamos en el lugar correcto, es decir en la carpeta cor
 
 Los tags o etiquetas nos permiten asignar versiones a los commits con cambios más importantes o significativos de nuestro proyecto.
 
+git log --all muestra todos los commits
+git log --all --graph muestra ademas las ramitas que se han realizado
+git log --all --graph --decorate --oneline muestra todo más comprimido con los id y la historia en nuestro archivo
+
+Para simplificar este codigo y trabajr siempre con el podemos ponerle un alias como un nombre arbolito asi: __alias arbolito="git log --all --graph --decorate --oneline"__
+y en el momento de escribir arbolito, nos muestra toda la lista que encerramos en ese nombre.
+
 Comandos para trabajar con etiquetas:
 
-+ Crear un nuevo tag y asignarlo a un commit: _git tag -a nombre-del-tag id-del-commit._
-+ Borrar un tag en el repositorio local: _git tag -d nombre-del-tag._
++ Crear un nuevo tag y asignarlo a un commit: _git tag -a nombre -m"mensaje del commit._
++ Borrar un tag en el repositorio local: _git tag -d nombretag._
 + Listar los tags de nuestro repositorio local: _git tag o git show-ref --tags._
 + Publicar un tag en el repositorio remoto: _git push origin --tags._
-+ Borrar un tag del repositorio remoto: _git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag._
++ Borrar un tag del repositorio remoto: _git tag -d nombretag y git push origin :refs/tags/nombreStag._
+
+## _Manejo de ramas en GitHub_
+
+Puedes trabajar con ramas que nunca envias a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo importantes que aprendas a manejarlas para trabajar profesionalmente.
+
++ Crear una rama en el repositorio local: _git branch nombrerama o git checkout -b nombrerama._
++ Publicar una rama local al repositorio remoto: _git push origin nombrerama._
+ __Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git usando el comando gitk.__
+
+con git show branch --all muestra las ramas con detalle
+
+## _Configurar múltiples colaboradores en un repositorio de GitHub_
+
+Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas, ni nada.
+
+Existen varias formas de solucionar esto para poder aceptar contribuciones. Una de ellas es añadir a cada persona de nuestro equipo como colaborador de nuestro repositorio.
+
+Solo debemos entrar a la configuración de colaboradores de nuestro proyecto _(Repositorio > Settings > Collaborators)_ y añadir el email o username de los nuevos colaboradores.
 
 [volver al indice](./README.md)
