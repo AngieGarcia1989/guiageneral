@@ -265,4 +265,33 @@ Existen varias formas de solucionar esto para poder aceptar contribuciones. Una 
 
 Solo debemos entrar a la configuración de colaboradores de nuestro proyecto _(Repositorio > Settings > Collaborators)_ y añadir el email o username de los nuevos colaboradores.
 
+## _Flujo de trabajo profesional con Pull requests_
+
+En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y luego de su aprobación se unen códigos con los llamados merge request.
+
+Para realizar pruebas enviamos el código a servidores que normalmente los llamamos _staging develop (servidores de pruebas)_ luego de que se realizan las pruebas pertinentes tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado merge request.
+
+## _Creando un Fork, contribuyendo a un repositorio_
+
+El fork es para personas que no están como colaboradores, sin embargo pueden pedir y colaborar desde afuera, allí hace fork tomando una copia actual del proyecto, al hacer fork puedo ver todos los cambios que ha tenido el proyecto, luego para llevarlo a local, debe ir clone or dowland en el repositorio propio, y copiar la url , ir a la terminal git clone y la url, como es publica la trae completa.
+
+Allí puedo entrar a la carpeta y codificarla , luego de los cambios hacer git add . git commit -m “mensaje” git pull para buenas prácticas y git push para subirlo a nuestro github
+
+Allí ya esta el repositorio con los cambios que adecue desde mi terminal, y para hacer un pull request que seria como un permiso para que hicieran merge a esos cambios, debo ir a pull request y new pull request, escoje las ramas que necesito usar que seria la que clone y la que modifique, le doy clonar y hago commit , cierro con create pull request .
+
+De esta manera envío los cambios desde afuera del proyecto
+
+## _Ignorar archivos en el repositorio con .gitignore_
+
+No todos los archivos que agregas a un proyecto deberían ir a un repositorio, por ejemplo cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión .env o cuando te estás conectando a una base de datos; son archivos que nadie debe ver.
+
+Hay que tener en cuenta que no se deben subir fotos a nuestro github, ya que son archivos muy pesados, para esto desde nuestra terminal debemos usar un new file .gitignore alli supongamos quiero ignorar una foto le colocamos *.jpg allí se ignora las fotos que se suban con push a nuestro github desde este archivo 
+
+## _Readme.md es una excelente práctica_
+
+README.md es una excelente práctica en tus proyectos, md significa Markdown es un especie de código que te permite cambiar la manera en que se ve un archivo de texto.
+
+Lo interesante de Markdown es que funciona en muchas páginas, por ejemplo la edición en Wikipedia; es un lenguaje intermedio que no es HTML, no es texto plano, es una manera de crear excelentes texto formateados.
+
+
 [volver al indice](./README.md)
