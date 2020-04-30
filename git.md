@@ -57,7 +57,7 @@ _Recuerda que debes habilitar la opción de ver la extensión de los archivos, d
 
  Descargamos en google o safari nuestro visual code que es el mas popular como editor de codigo.
 
-## **__¿Qué es el staging y los repositorios? Ciclo básico de trabajo en Git__**
+## **_¿Qué es el staging y los repositorios? Ciclo básico de trabajo en Git_**
 Para iniciar un repositorio, o sea, activar el sistema de control de versiones de Git en tu proyecto, solo debes ejecutar el comando _git init._
 
 Este comando se encargará de dos cosas: primero, crear una carpeta _.git_, donde se guardará toda la base de datos con cambios atómicos de nuestro proyecto; y segundo, crear un área que conocemos como Staging, que guardará temporalmente nuestros archivos (cuando ejecutemos un comando especial para eso) y nos permitirá, más adelante, guardar estos cambios en el repositorio (también con un comando especial).
@@ -90,7 +90,7 @@ __Comandos para mover archivos entre los estados de Git:__
   
   + _git rm --force:_ Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
 
-  ## **__¿Qué es un Branch (rama) y cómo funciona un Merge en Git?__**
+  ## **_¿Qué es un Branch (rama) y cómo funciona un Merge en Git?_**
 
 Git es una base de datos muy precisa con todos los cambios y crecimiento que ha tenido nuestro proyecto. Los commits son la única forma de tener un registro de los cambios. Pero las ramas amplifican mucho más el potencial de Git.
 
@@ -106,7 +106,7 @@ Podemos crear todas las ramas y commits que queramos. De hecho, podemos aprovech
 
 Solo ten en cuenta que combinar estas ramas (sí, hacer _“merge”_) puede generar conflictos. Algunos archivos pueden ser diferentes en ambas ramas. Git es muy inteligente y puede intentar unir estos cambios automáticamente, pero no siempre funciona. En algunos casos, somos nosotros los que debemos resolver estos conflictos “a mano”.
 
-## **__Crea un repositorio de Git y haz tu primer commit__**
+## **_Crea un repositorio de Git y haz tu primer commit_**
 
 Si quieres ver los archivos ocultos de una carpeta puedes habilitar la opción de Vista > Mostrar u ocultar > Elementos ocultos (en Windows) o ejecutar el comando ls -a.
 
@@ -122,7 +122,7 @@ git config --global user.name "Tu Nombre"
 ~~~
 Existen muchas otras configuraciones de Git que puedes encontrar ejecutando el comando git config --list (o solo git config para ver una explicación más detallada).
 
-## **__Analizar cambios en los archivos de tu proyecto con Git__**
+## **_Analizar cambios en los archivos de tu proyecto con Git_**
 
 El comando _git show_ nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuándo se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser más detallados.
 
@@ -132,7 +132,7 @@ Recuerda que puedes obtener el ID de tus commits con el comando _git log._
 
  si se te olvida agrgar un comentario dentro de un  commit, puedes escribirlo en el momento que te pide escribir el comentario y sales con _esc shift zz_ , lo puedes usar con _vim_ tambien 
 
-## **__Volver en el tiempo en nuestro repositorio utilizando branches y checkout__**
+## **_Volver en el tiempo en nuestro repositorio utilizando branches y checkout_**
 
 El comando _git checkout + ID + archivo_  nos permite viajar en el tiempo. Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas. 
 
@@ -144,7 +144,7 @@ Hay dos formas de usar _git reset:_ con el argumento _--hard_, borrando toda la 
 
 _git log --stat_ podemos ver los commits con los cambios especificos.
 
-## **__Git reset vs. Git rm__**
+## **_Git reset vs. Git rm_**
 
 _Texto: @juandc_
 
@@ -177,7 +177,7 @@ __git reset HEAD: Este es el comando para sacar archivos del área de Staging. N
 
 __Si usamos git reset HEAD, lo único que haremos será mover cambios de Staging a Unstaged. Seguiremos teniendo los últimos cambios del archivo, el repositorio mantendrá el archivo (no con sus últimos cambios pero sí con los últimos en los que hicimos commit) y no habremos perdido nada__
 
-## **__Introducción a las ramas o branches de Git__**
+## **_Introducción a las ramas o branches de Git_**
 
 Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 
@@ -189,7 +189,7 @@ podemos guardar nuestros cambios con git commit -am mensajeque queramos y esto d
 
 _Recuerda que puedes borrar commits con git reset y ramas con git branch -d_
 
-## **__Solución de conflictos al hacer un merge__**
+## **_Solución de conflictos al hacer un merge_**
 
 
 Git es muy inteligente y puede resolver algunos conflictos automáticamente: cambios, nuevas líneas, entre otros. Pero algunas veces no sabe cómo resolver estas diferencias, por ejemplo, cuando dos ramas diferentes hacen cambios distintos a una misma línea.
@@ -200,7 +200,7 @@ Recuerda que siempre debemos crear un nuevo commit para aplicar los cambios del 
 
 Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged. Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged, solo debemos ejecutar git add para pasarlos al área de staging y git commit para aplicar los cambios en el repositorio.
 
-## **__Uso de GitHub__**
+## **_Uso de GitHub_**
 
 GitHub es una plataforma que nos permite guardar repositorios de Git que podemos usar como servidores remotos y ejecutar algunos comandos de forma visual e interactiva (sin necesidad de la consola de comandos).
 
@@ -228,7 +228,7 @@ Debemos asegurarnos que estamos en el lugar correcto, es decir en la carpeta cor
 + __git pull origin master:__ trae la información de github "--allow-unrelated-histories" se usa para traer por primera vez tus archivos  e integrar de github a visual.
 + __git push origin master:__ permite enviar la información a github
 
-## **__Tags y versiones en Git y GitHub__**
+## **_Tags y versiones en Git y GitHub_**
 
 Los tags o etiquetas nos permiten asignar versiones a los commits con cambios más importantes o significativos de nuestro proyecto.
 
@@ -247,7 +247,7 @@ Comandos para trabajar con etiquetas:
 + Publicar un tag en el repositorio remoto: _git push origin --tags._
 + Borrar un tag del repositorio remoto: _git tag -d nombretag y git push origin :refs/tags/nombreStag._
 
-## **__Manejo de ramas en GitHub__**
+## **_Manejo de ramas en GitHub_**
 
 Puedes trabajar con ramas que nunca envias a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo importantes que aprendas a manejarlas para trabajar profesionalmente.
 
@@ -257,7 +257,7 @@ Puedes trabajar con ramas que nunca envias a GitHub, así como pueden haber rama
 
 con git show branch --all muestra las ramas con detalle
 
-## **__Configurar múltiples colaboradores en un repositorio de GitHub__**
+## **_Configurar múltiples colaboradores en un repositorio de GitHub_**
 
 Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas, ni nada.
 
@@ -265,13 +265,13 @@ Existen varias formas de solucionar esto para poder aceptar contribuciones. Una 
 
 Solo debemos entrar a la configuración de colaboradores de nuestro proyecto _(Repositorio > Settings > Collaborators)_ y añadir el email o username de los nuevos colaboradores.
 
-## **__Flujo de trabajo profesional con Pull requests__**
+## **_Flujo de trabajo profesional con Pull requests_**
 
 En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y luego de su aprobación se unen códigos con los llamados merge request.
 
 Para realizar pruebas enviamos el código a servidores que normalmente los llamamos _staging develop (servidores de pruebas)_ luego de que se realizan las pruebas pertinentes tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado merge request.
 
-## **__Creando un Fork, contribuyendo a un repositorio__**
+## **_Creando un Fork, contribuyendo a un repositorio_**
 
 El fork es para personas que no están como colaboradores, sin embargo pueden pedir y colaborar desde afuera, allí hace fork tomando una copia actual del proyecto, al hacer fork puedo ver todos los cambios que ha tenido el proyecto, luego para llevarlo a local, debe ir clone or dowland en el repositorio propio, y copiar la url , ir a la terminal git clone y la url, como es publica la trae completa.
 
@@ -281,13 +281,13 @@ Allí ya esta el repositorio con los cambios que adecue desde mi terminal, y par
 
 De esta manera envío los cambios desde afuera del proyecto
 
-## **__Ignorar archivos en el repositorio con .gitignore__**
+## **_Ignorar archivos en el repositorio con .gitignore_**
 
 No todos los archivos que agregas a un proyecto deberían ir a un repositorio, por ejemplo cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión .env o cuando te estás conectando a una base de datos; son archivos que nadie debe ver.
 
 Hay que tener en cuenta que no se deben subir fotos a nuestro github, ya que son archivos muy pesados, para esto desde nuestra terminal debemos usar un new file .gitignore alli supongamos quiero ignorar una foto le colocamos *.jpg allí se ignora las fotos que se suban con push a nuestro github desde este archivo 
 
-## **__Readme.md es una excelente práctica__**
+## **_Readme.md es una excelente práctica_**
 
 README.md es una excelente práctica en tus proyectos, md significa Markdown es un especie de código que te permite cambiar la manera en que se ve un archivo de texto.
 
