@@ -1,0 +1,341 @@
+
+body{
+    margin: 0;
+    display: block;
+    background-color:#Fafafa;
+   
+}
+
+
+.header {
+background-color: #1b2127;
+color: rgb(247, 244, 244);
+margin-bottom: 0px;
+display: flex;
+justify-content: space-between;
+height: 70px;
+align-items: center;
+}
+.logo img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.navegador{
+    height: inherit;
+}
+.header ol {
+    display: flex;
+    height: inherit;
+}
+.header a {
+    color:white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+ol,
+ul {
+    margin:0 10px 10px 0;
+    padding: 20px;
+    list-style: none;
+}
+figure{
+    margin: 0;
+}
+
+
+.portafolio{
+    background: #fafafa;
+    padding: 20px;
+}
+
+.experience{
+    background: #fafafa;
+padding: 20px;
+}
+.job {
+    background: #fafafa;
+padding: 20px;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 2em; 
+    letter-spacing: -.2px;
+    color:white ;
+    text-transform: uppercase;
+    text-decoration: dashed;
+    margin: 0;
+}
+
+h1 strong{
+    color:#F20042 ;
+}
+
+h2 {
+        color:#F20042 ;
+        font-weight: bold;
+        font-size: 24px;
+        
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+  h3{ padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+.principal {
+/*background-image: url(./Imagenes_artista/compu.jpeg);*/
+/*background-size: 500px 300px;*/
+background-color: #191f25;
+/*background-repeat: no-repeat;*/
+/*background-position-x:right ;*/
+height: 300px;
+margin-top: 0px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.foto{
+    object-fit: cover;
+}
+.title{
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.project-imagen{display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.imageone{display: flex;
+    align-items: center;
+    padding: 0 0 0 380px;
+    margin: 0;
+}
+.imagesecond{display: flex;
+    align-items: center;
+    padding: 0 0 0 380px;
+    margin: 0;
+    
+
+}
+.project{
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom:15px ;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project p{
+    align-items: center;
+}
+.project-details {
+    width: 500px;
+    margin:10px ;
+    margin-bottom:15px ;
+    padding: 20px;
+    background-color: white;
+}
+
+.experience1 {
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom:15px ;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.experience p{
+    align-items: center;
+}
+.experience-details {
+    width: 500px;
+    margin:10px ;
+    margin-bottom:15px ;
+    padding: 20px;
+    background-color: white;
+    }
+ 
+.job-details {
+    width: 500px;
+    margin:10px ;
+    margin-bottom:15px ;
+    padding: 20px;
+    background-color: white;
+}
+
+.job1{
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom:15px ;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.job1 p{
+    align-items: center;
+}
+
+ 
+.project-imagen{
+    width: 500px;
+}
+     
+.imageone{
+    width: 500px;
+}
+
+ .imagesecond {
+     width: 500px;
+ } 
+.moremore {
+    padding: 20px;
+    background: #fafafa;
+}
+.morelist{
+display: flex;
+flex-wrap: wrap;
+}
+ .moreone{
+    
+     margin: 30px 30px;
+     width: 400px;
+     border-radius: 10px;
+     overflow: hidden;
+     flex-shrink: 0;background: antiquewhite;
+     
+
+ }
+ .moreone img{
+     width: 400px;
+     height: 400px;
+     object-fit: cover;
+    
+ }
+ .more-details{
+     margin: 20px 40px;
+     margin-top: -40px;
+     background: white;
+     position:relative;
+     padding: 20px;
+     text-align: center;
+ }
+.more-description{
+    text-align: left;
+}
+
+.more-url{
+    border: 1px solid #F20042 ;
+    padding:5px 20px;
+    text-decoration: none;
+    color: #F20042;
+    border-radius: 5px;
+}
+.contact{
+    background-color:#F20042 ;
+    color: #fafafa;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    /*border: 1px solid red;*/
+}
+.social-link{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 10px;
+    object-fit: cover;
+}
+.social-link.twitter{
+    background-image: url(./Imagenes_artista/twiter.jpg);
+    background-size: 50px 50px;
+}
+.social-link.facebook{
+    background-image: url(./Imagenes_artista/facebook.jpg);
+    background-size: 50px 50px;
+}
+.social-link.github{
+    background-image: url(./Imagenes_artista/GitHub-Logo.jpg);
+    background-size: 50px 50px;
+}
+.social-link.instagram{
+    background-image: url(./Imagenes_artista/instagram.jpg);
+    background-size: 50px 50px;
+}
+.form-email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 8px 15px 10px 25px;
+    margin: 10px;
+    background-image: url(./Imagenes_artista/mensaje.jpeg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: center;
+}
+.form-email button{
+display: block;
+margin-top: 10px;
+background: transparent;
+color: white;
+margin-top: 10px;
+padding: 5px 10px;
+border-radius: 5px;
+width: 100px;
+}
+ .footer {
+    justify-content: space-between;
+    display: flex;
+    background-color: #1b2127;
+    color:white;  
+}
+
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+.container{
+   /* border: 1px solid red;*/
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
